@@ -1,0 +1,328 @@
+@charset "UTF-8";
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font: 14px/16px 'PT Sans', sans-serif;
+  color: #fff;
+  background: #fff;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.center {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.wrapper .header {
+  background: #eb5346;
+  border-bottom: 2px solid #000;
+}
+
+.wrapper .header .header__content {
+  height: 90px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .header .header__content .header_img {
+  display: inline-block;
+  background: url("../img/shield.png") no-repeat center;
+  width: 40px;
+  height: 50px;
+}
+
+.wrapper .header .header__content .header_title {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+}
+
+.wrapper .classes .classes_content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 5px;
+}
+
+.wrapper .classes .classes_content .classes_item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .classes .classes_content .classes_item .classes_title, .wrapper .classes .classes_content .classes_item .classes_calc {
+  height: 25px;
+  font-size: 19px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+.wrapper .classes .classes_content .classes_item .classes_title {
+  margin: 85px 0 65px;
+  width: 60%;
+  background: #252e39;
+}
+
+.wrapper .classes .classes_content .classes_item .classes_calc {
+  margin: 85px 0 30px;
+  width: 80%;
+  background: #eb5346;
+  cursor: pointer;
+}
+
+.wrapper .classes .classes_content .classes_item .pointer {
+  display: none;
+  margin-top: -24px;
+  width: 32px;
+  height: 24px;
+  background: url(../img/pointer.png) no-repeat center;
+}
+
+.wrapper .classes .classes_content .classes_item .classes_img {
+  display: block;
+  width: 100%;
+}
+
+.wrapper .view {
+  margin-top: 20px;
+}
+
+.wrapper .view .view_content {
+  display: grid;
+  grid-template-columns: 62% 27%;
+  grid-column-gap: 6%;
+  margin-bottom: 120px;
+}
+
+.wrapper .view .view_content .view_img-wrap .view_img {
+  display: block;
+  width: 100%;
+}
+
+.wrapper .view .view_content .view_img-wrap .icons-wrap {
+  display: grid;
+  grid-template-columns: repeat(8, 80px);
+  grid-template-rows: minmax(118px, 1fr);
+  grid-column-gap: 1%;
+  color: #eb5346;
+}
+
+.wrapper .view .view_content .view_img-wrap .icons-wrap .icon_item {
+  text-align: center;
+}
+
+.wrapper .view .view_content .view_img-wrap .icons-wrap .icon_item .icon_img {
+  display: inline-block;
+  width: 72px;
+  height: 72px;
+}
+
+.wrapper .view .view_content .view_img-wrap .icons-wrap .icon_item .icon_img1 {
+  background: url("../img/icons/капот.png") no-repeat center;
+}
+
+.wrapper .view .view_content .view_img-wrap .icons-wrap .icon_item .icon_img2 {
+  background: url("../img/icons/крыло-полностью.png") no-repeat center;
+}
+
+.wrapper .view .view_content .view_img-wrap .icons-wrap .icon_item .icon_img3 {
+  background: url("../img/icons/бампер-перед.png") no-repeat center;
+}
+
+.wrapper .view .view_content .view_img-wrap .icons-wrap .icon_item .icon_img4 {
+  background: url("../img/icons/зеркало.png") no-repeat center;
+}
+
+.wrapper .view .view_content .view_img-wrap .icons-wrap .icon_item .icon_img5 {
+  background: url("../img/icons/фара.png") no-repeat center;
+}
+
+.wrapper .view .view_content .view_img-wrap .icons-wrap .icon_item .icon_img6 {
+  background: url("../img/icons/ручки.png") no-repeat center;
+}
+
+.wrapper .view .view_content .view_img-wrap .icons-wrap .icon_item .icon_img7 {
+  background: url("../img/icons/птф.png") no-repeat center;
+}
+
+.wrapper .view .view_content .view_img-wrap .icons-wrap .icon_item .icon_title {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.wrapper .view .view_content .view_img-wrap .common-price {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  margin-left: 20px;
+  color: #000;
+}
+
+.wrapper .view .view_content .view_img-wrap .common-price .common-price_info .price_title {
+  display: block;
+  font-size: 1.9em;
+  color: #eb5346;
+}
+
+.wrapper .view .view_content .view_img-wrap .common-price .common-price_info .line {
+  display: block;
+  width: 95%;
+  border-bottom: 1px solid #000;
+  margin: 2px 0 9px;
+}
+
+.wrapper .view .view_content .view_img-wrap .common-price .common-price_info .price-descr {
+  display: inline-block;
+  font-size: 1.2em;
+}
+
+.wrapper .view .view_content .view_img-wrap .common-price .common-price_info .price-descr .price_digit {
+  display: inline-block;
+  margin-left: 60px;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #eb5346;
+}
+
+.wrapper .view .view_content .view_img-wrap .common-price .common-price_btn {
+  justify-self: center;
+  width: 80%;
+  background: #252e39;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: -45px;
+}
+
+.wrapper .view .view_content .view_choise {
+  border-left: 1.5px solid #000;
+  color: #000;
+}
+
+.wrapper .view .view_content .view_choise .view_choise-items {
+  padding-left: 15px;
+}
+
+.wrapper .view .view_content .view_choise .view_choise-items .active {
+  background: url("../img/choise_item-bgr2.png") no-repeat left;
+  color: #fff;
+}
+
+.wrapper .view .view_content .view_choise .view_choise-items #parts:hover {
+  background: url("../img/choise_item-parts-bgr2-dark.png") no-repeat left;
+}
+
+.wrapper .view .view_content .view_choise .view_choise-items .selected {
+  background: url("../img/choise_item-parts-bgr2-dark.png") no-repeat left;
+  color: #fff;
+}
+
+.wrapper .view .view_content .view_choise .view_choise-items li {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  margin: 20px 0;
+  cursor: pointer;
+  margin-left: -35px;
+}
+
+.wrapper .view .view_content .view_choise .view_choise-items li:hover {
+  background: url("../img/choise_item-bgr2.png") no-repeat left;
+  color: #fff;
+}
+
+.wrapper .view .view_content .view_choise .view_choise-items li span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 35px;
+  height: 30px;
+}
+
+.wrapper .view .view_content .view_choise .parts-items {
+  display: none;
+}
+
+.wrapper .view .view_content .view_choise .parts-items .parts-item {
+  padding-left: 25px;
+}

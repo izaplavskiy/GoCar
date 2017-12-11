@@ -1,0 +1,288 @@
+
+
+$primary-color-red: #eb5346
+
+
+
+html
+  height: 100%
+
+body
+  margin: 0
+  padding: 0
+  height: 100%
+  font: 14px/16px 'PT Sans', sans-serif
+  color: #fff
+  background: #fff
+
+a
+  color: #000
+  text-decoration: none
+
+  &:hover
+    text-decoration: none
+
+ol, ul 
+  list-style: none;
+
+.clearfix:before,
+.clearfix:after 
+  content: " "
+  display: table
+
+.clearfix:after 
+  clear: both
+
+*
+  padding: 0
+  margin: 0
+  outline: none
+  box-sizing: border-box
+
+
+.center 
+  margin: 0 auto 
+  width: 80%  
+
+
+.wrapper
+  .header
+    background: $primary-color-red
+    border-bottom: 2px solid #000
+
+    .header__content
+      height: 90px
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: center
+
+      .header_img
+        display: inline-block
+        background: url("../img/shield.png") no-repeat center
+        width: 40px
+        height: 50px
+
+      .header_title
+        display: inline-block
+        margin-left: 20px
+        font-size: 2em
+        font-weight: bold
+        color: #fff
+
+  .classes
+    .classes_content
+      display: grid     
+      grid-template-columns: repeat(3, 1fr)
+      grid-column-gap: 5px
+      
+      
+
+      .classes_item
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+        
+
+        .classes_title,.classes_calc
+          height: 25px
+          font-size: 19px
+          text-transform: uppercase
+          text-align: center
+          line-height: 25px
+          font-weight: bold
+
+
+        .classes_title
+          margin: 85px 0 65px
+          width: 60%
+          background: #252e39
+
+        
+
+        .classes_calc
+          margin: 85px 0 30px
+          width: 80%
+          background: $primary-color-red
+          cursor: pointer
+
+          
+
+        .pointer
+          display: none
+          margin-top: -24px
+          width: 32px
+          height: 24px
+          background: url(../img/pointer.png) no-repeat center
+
+        .classes_img
+          display: block
+          width: 100%
+
+  .view
+    margin-top: 20px
+
+    .view_content
+      display: grid
+      grid-template-columns: 62% 27%
+      grid-column-gap: 6%
+      margin-bottom: 120px
+
+      .view_img-wrap
+        .view_img
+          display: block
+          width: 100%
+
+        .icons-wrap
+          display: grid
+          grid-template-columns: repeat(8, 80px)
+          grid-template-rows: minmax(118px, 1fr)
+          grid-column-gap: 1%
+          color: $primary-color-red
+
+
+          .icon_item
+            text-align: center
+            
+            .icon_img
+              display: inline-block
+              width: 72px
+              height: 72px
+            
+              
+            .icon_img1
+              background: url("../img/icons/капот.png") no-repeat center  
+
+
+            .icon_img2
+              background: url("../img/icons/крыло-полностью.png") no-repeat center 
+
+            .icon_img3
+              background: url("../img/icons/бампер-перед.png") no-repeat center 
+
+            .icon_img4
+              background: url("../img/icons/зеркало.png") no-repeat center 
+
+            .icon_img5
+              background: url("../img/icons/фара.png") no-repeat center 
+
+            .icon_img6
+              background: url("../img/icons/ручки.png") no-repeat center 
+
+            .icon_img7
+              background: url("../img/icons/птф.png") no-repeat center 
+
+            .icon_img8
+              background: 
+
+            
+            .icon_title
+              display: inline-block
+              margin-top: 10px
+              font-size: 0.9em
+
+          
+        .common-price
+          display: grid
+          grid-template-columns: 50% 50%
+          align-items: center
+          margin-top: 30px
+          margin-left: 20px
+          color: #000
+
+          .common-price_info
+            .price_title
+              display: block
+              font-size: 1.9em
+              color: $primary-color-red
+              
+
+            .line
+              display: block
+              width: 95%
+              border-bottom: 1px solid #000
+              margin: 2px 0 9px
+              
+            .price-descr
+              display: inline-block
+              font-size: 1.2em
+              
+
+              .price_digit
+                display: inline-block
+                margin-left: 60px
+                font-size: 1.3em
+                font-weight: bold
+                color: $primary-color-red
+
+          .common-price_btn
+            justify-self: center
+            width: 80%
+            background: #252e39
+            border: none
+            text-transform: uppercase
+            font-size: 1.5em
+            color: #fff
+            padding: 10px 20px
+            cursor: pointer
+            margin-bottom: -45px
+
+
+      .view_choise
+        border-left: 1.5px solid #000
+        color: #000
+
+
+        .view_choise-items
+          padding-left: 15px
+
+          .active
+            background: url("../img/choise_item-bgr2.png") no-repeat left
+            color: #fff
+
+          #parts:hover
+            background: url("../img/choise_item-parts-bgr2-dark.png") no-repeat left 
+
+          .selected
+            background: url("../img/choise_item-parts-bgr2-dark.png") no-repeat left 
+            color: #fff
+
+          li
+            display: block
+            text-transform: uppercase
+            font-size: 1.2em
+            margin: 20px 0
+            cursor: pointer
+            margin-left: -35px
+            // background: url("../img/choise_item-bgr2.png") no-repeat left
+
+            &:hover
+              background: url("../img/choise_item-bgr2.png") no-repeat left
+              color: #fff
+
+            
+
+            
+
+            span
+              display: flex
+              align-items: center
+              margin-left: 35px
+              height: 30px
+
+        .parts-items
+          display: none
+
+          .parts-item
+            padding-left: 25px
+           
+
+
+              
+
+        
+
+
+      
